@@ -1,0 +1,10 @@
+export const HOME = '/';
+export const FEATURED_PRODUCTS = '/featured';
+export const RECOMMENDED_PRODUCTS = '/recommended';
+export const ADMIN_DASHBOARD = '/admin/dashboard';
+export const ADMIN_USERS = '/admin/users';
+export const SEARCH = '/search/:searchKey';
+export const SIGNIN = '/signin';
+export const SIGNOUT = '/signout';
+export const SIGNUP = '/signup';
+export const VIEW_PRODUCT = '/product/:id';

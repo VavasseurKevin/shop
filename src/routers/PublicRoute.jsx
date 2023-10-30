@@ -1,6 +1,13 @@
 import React from "react";
 
-const PublicRoute = () => {
+function PublicRoute () {
+
+    return ( 
+        <div>
+            
+        </div>
+    )
+
 
 }
 

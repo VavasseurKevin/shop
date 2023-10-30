@@ -1,20 +1,19 @@
-import React from "react";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import AdminRoute from "./AdminRoute";
-import PublicRoute from "./PublicRoute";
-import ClientRoute from "./ClientRoute";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import * as ROUTES from '../constants/routes';
+import * as view from '../views';
 
-
-const AppRouter = () => {
-    <BrowserRouter>
-            <Routes>
-                <Route path="/" element={ClientRoute} />
-                <Route path="/dasboard" element={AdminRoute} />
-                <Route path="/newitem" element={AdminRoute} />
-                <Route path="/edititem/:id" element={PublicRoute} />
-                <Route path="/profile" element={PublicRoute} />
-            </Routes>
-    </BrowserRouter>
-};
+const AppRouter = () => (
+  <Routes>
+    <Route path={ROUTES.HOME} element={<view.Home />} />
+    <Route path={ROUTES.SHOP} element={<view.Shop />} />
+    <Route path={ROUTES.FEATURED_PRODUCTS} element={<view.FeaturedProducts />} />
+    <Route path={ROUTES.SEARCH} element={<view.Search />} />
+    <Route path={ROUTES.RECOMMENDED_PRODUCTS} element={<view.RecommendedProducts />} />
+    <Route path={ROUTES.SIGNUP} element={<view.SignUp />} />
+    <Route path={ROUTES.SIGNIN} element={<view.SignIn />} />
+    <Route path={ROUTES.ADMIN_DASHBOARD} element={<view.Dashboard />} />
+  </Routes>
+);
 
 export default AppRouter;
