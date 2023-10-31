@@ -1,0 +1,19 @@
+// ---------------------------- FEATURED PRODUCTS ----------------------------
+.display {
+    margin: 5rem;
+    margin-top: 10rem;
+  
+    @include mobile {
+      margin: 0;
+    }
+  }
+  .display-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    a {
+      text-decoration: underline;
+      font-size: 1.8rem;
+    }
+  }
