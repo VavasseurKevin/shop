@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import bannerImg from "../../images/banner-girl.png";
 import { ArrowRightOutlined } from '@ant-design/icons';
+import { ProductShowcaseGrid } from "../../components/product";
 
 
 const Home = () => {
@@ -34,6 +35,7 @@ const Home = () => {
             <h1>Produits Populaires</h1>
             <Link to={ROUTES.FEATURED_PRODUCTS}>Voir Tout</Link>
           </div>
+          <ProductShowcaseGrid/>
         </div>
 
         <div className="display">

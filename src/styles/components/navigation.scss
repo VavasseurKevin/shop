@@ -50,6 +50,7 @@
   padding: 0;
   margin: 1rem;
   text-align: right;
+ 
 }
 
 .navigation-menu-main {
@@ -61,9 +62,12 @@
     display: inline-block;
 
     a {
-      padding: 10px 15px;
+      padding: 8px 11px;
       font-size: 1.4rem;
       opacity: 0.5;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
 
       &:hover {
         background: $background-color-01;
@@ -93,6 +97,8 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  background-color: black;
+
 
   &:hover {
     text-decoration: none;

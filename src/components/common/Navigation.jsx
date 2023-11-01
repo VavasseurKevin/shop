@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo-full.png";
+import { ShoppingOutlined } from "@ant-design/icons";
 import * as ROUTES from "../../constants/routes";
 import SearchBar from "./SearchBar";
 import Badge from "./Badge";
-import { ShoppingOutlined } from "@ant-design/icons";
+
 
 const Navigation = () => {
   return (
