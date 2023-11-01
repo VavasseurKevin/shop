@@ -4,6 +4,7 @@ import * as ROUTES from "../../constants/routes";
 import bannerImg from "../../images/banner-girl.png";
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { ProductShowcaseGrid } from "../../components/product";
+import { Footer } from "../../components/common";
 
 
 const Home = () => {
@@ -43,9 +44,13 @@ const Home = () => {
             <h1>Produits Recommandés</h1>
             <Link to={ROUTES.RECOMMENDED_PRODUCTS}>Voir Tout</Link>
           </div>
+          <ProductShowcaseGrid/>
+          <Footer/>
         </div>
       </div>
+     
     </main>
+   
   );
 };
 
