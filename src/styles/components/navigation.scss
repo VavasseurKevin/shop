@@ -1,0 +1,106 @@
+.navigation {
+  width: 100%;
+  height: 10rem;
+  background: $background-color;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  padding-top: 3rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(0);
+  z-index: map-get($z-index, navigation);
+  box-shadow: none;
+  @include bezier-transition(transform, 0.3s, ease);
+
+  @include tablet {
+    padding: 0.5rem 2rem;
+  }
+
+  @include mobile {
+    padding: 0 $s-size;
+    position: fixed;
+  }
+
+  .logo {
+    height: inherit;
+    margin-right: 2rem;
+  }
+
+  .logo img {
+    width: 15rem;
+    height: inherit;
+    object-fit: contain;
+  }
+
+  .logo a {
+    display: block;
+    height: 100%;
+  }
+
+  .searchbar {
+    width: 150px;
+  }
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 1rem;
+  text-align: right;
+}
+
+.navigation-menu-main {
+  padding-left: 0;
+  margin-right: 0rem;
+  flex-grow: 1;
+
+  li {
+    display: inline-block;
+
+    a {
+      padding: 10px 15px;
+      font-size: 1.4rem;
+      opacity: 0.5;
+
+      &:hover {
+        background: $background-color-01;
+      }
+    }
+  }
+}
+
+.navigation-menu-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-action {
+  display: flex;
+  align-items: center;
+  margin-left: $xxl-size;
+}
+
+.navigation-menu-link {
+  color: $heading-color;
+  padding: $xs-size $m-size;
+  text-decoration: none;
+  font-size: $font-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+    background: $background-color-01;
+  }
+}
+
+.navigation-menu-active {
+  font-weight: bold;
+  opacity: 1 !important;
+}

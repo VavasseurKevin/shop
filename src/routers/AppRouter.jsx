@@ -2,8 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
 import * as view from '../views';
+import { Navigation } from '../components/common';
 
 const AppRouter = () => (
+  <>
+  <Navigation/>
   <Routes>
     <Route path={ROUTES.HOME} element={<view.Home />} />
     <Route path={ROUTES.SHOP} element={<view.Shop />} />
@@ -14,6 +17,7 @@ const AppRouter = () => (
     <Route path={ROUTES.SIGNIN} element={<view.SignIn />} />
     <Route path={ROUTES.ADMIN_DASHBOARD} element={<view.Dashboard />} />
   </Routes>
+  </>
 );
 
 export default AppRouter;

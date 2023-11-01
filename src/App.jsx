@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+
 import AppRouter from './routers/AppRouter';
 import "./styles/style.scss"
 import WebFont from 'webfontloader';

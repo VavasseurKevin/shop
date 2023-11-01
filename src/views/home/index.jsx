@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import bannerImg from "../../images/banner-girl.png";
+import { ArrowRightOutlined } from '@ant-design/icons';
+
 
 const Home = () => {
   return (
@@ -20,7 +22,7 @@ const Home = () => {
               lentilles de contact : nous couvrons vos yeux.
             </p>
             <br />
-            <Link to={ROUTES.SHOP}>Acheter maintenant &nbsp;</Link>
+            <Link className="button" to={ROUTES.SHOP}>Acheter maintenant &nbsp;<ArrowRightOutlined /></Link>
           </div>
 
           <div className="banner-img">
