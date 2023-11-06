@@ -3,9 +3,11 @@
 @import './tools/mixins.scss';
 @import './settings/colors.scss';
 @import './settings/typography.scss';
+
 @import './settings/sizes.scss';
-@import './settings/zindex.scss';
 @import './elements/base.scss';
+@import './settings/zindex.scss';
+
 @import './elements/button.scss';
 @import './components/navigation.scss';
 @import './components/product.scss';

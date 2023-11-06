@@ -10,7 +10,7 @@ const AppRouter = () => (
   <Routes>
     <Route path={ROUTES.HOME} element={<view.Home />} />
     <Route path={ROUTES.SHOP} element={<view.Shop />} />
-    <Route path={ROUTES.FEATURED_PRODUCTS} element={<view.FeaturedProducts />} />
+    <Route path={ROUTES.FEATURED_PRODUCTS} element={<view.FeaturedProducts/>} />
     <Route path={ROUTES.SEARCH} element={<view.Search />} />
     <Route path={ROUTES.RECOMMENDED_PRODUCTS} element={<view.RecommendedProducts />} />
     <Route path={ROUTES.VIEW_PRODUCT} element={<view.ViewProduct />} />
