@@ -1,5 +1,5 @@
 import React from 'react';
-import lunette1 from "../../static/lunettes1.png";
+import lunette8 from "../../static/lunettes8.png";
 import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/routes";
 
@@ -9,7 +9,7 @@ const ProductFeatured = () => {
   
         <div className="product-display" >
             <div className="product-display-img">
-            <img alt="lunette1" src={lunette1} />
+            <img alt="lunette1" src={lunette8} />
             </div>
             <div className="product-display-details">
             <Link to={ROUTES.VIEW_PRODUCT}>
