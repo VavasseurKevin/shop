@@ -11,11 +11,7 @@ const SignUp = () => {
         <div className="auth-main">
           <h3>S&apos;inscrire à Ma Vision</h3>
           <Formik
-            initialValues={{ nomprenom: "", email: "", password: "" }}
-            onSubmit={(values) => {
-              // Gérez ici la soumission du formulaire
-              console.log(values);
-            }}
+            
           >
             {() => (
               <Form>
@@ -24,7 +20,7 @@ const SignUp = () => {
                     <label className="label-input" htmlFor="nomprenom">
                       * Nom & Prénom
                     </label>
-                    <br />
+                    
                     <Field
                       name="nomprenom"
                       type="text"
@@ -40,7 +36,7 @@ const SignUp = () => {
                       * Email
                     </label>
 
-                    <br />
+                    
                     <Field
                       name="email"
                       type="email"
@@ -54,7 +50,7 @@ const SignUp = () => {
                     <label className="label-input" htmlFor="password">
                       * Mot de passe
                     </label>
-                    <br />
+                   
                     <Field
                       name="password"
                       type="password"
