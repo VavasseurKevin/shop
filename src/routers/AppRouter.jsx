@@ -16,6 +16,7 @@ const AppRouter = () => (
     <Route path={ROUTES.VIEW_PRODUCT} element={<view.ViewProduct />} />
     <Route path={ROUTES.SIGNUP} element={<view.SignUp />} />
     <Route path={ROUTES.SIGNIN} element={<view.SignIn />} />
+    <Route path={ROUTES.FORGOT_PASSWORD} element={<view.ForgotPassword />} />
     <Route path={ROUTES.ADMIN_DASHBOARD} element={<view.Dashboard />} />
   </Routes>
   </>

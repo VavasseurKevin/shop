@@ -213,6 +213,17 @@
     justify-content: flex-end;
   }
   
+
+.forgot_password {
+    width: 50%;
+    margin: auto;
+    
+    @include mobile {
+      width: 100%;
+      padding: $s-size;
+    } 
+  }
+  
   
   
   

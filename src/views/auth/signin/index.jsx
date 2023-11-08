@@ -3,6 +3,7 @@ import { SocialLogin } from "../../../components/common";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Field, Form, Formik } from "formik";
 import { Link } from "react-router-dom";
+import * as ROUTES from '../../../constants/routes';
 
 const SignIn = () => {
   return (
@@ -46,7 +47,9 @@ const SignIn = () => {
                   </div>
                   <br />
                   <div className="auth-field auth-action ">
-                    <Link style={{ textDecoration: "underline" }}>
+                    <Link  
+                        to={ROUTES.FORGOT_PASSWORD}
+                        style={{ textDecoration: "underline" }}>
                       <span>Mot de passe oublié ?</span>
                     </Link>
                     <button className="button auth-button" type="submit">
