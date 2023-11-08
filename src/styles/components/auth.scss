@@ -17,7 +17,7 @@
 .auth-content {
     width: 80rem;
     height: auto;
-    margin : 20rem auto;
+    margin : auto;
   
     @include mobile {
       width: 100%;
@@ -171,6 +171,48 @@
       color: $paragraph-color;
     }
   }
+
+
+.auth-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $s-size;
+    margin: auto;
+    background: $background-color-01;
+    border: 1px solid $border-color-focus;
+    border-top: none;
+  }
+
+  .auth-info {
+    margin-right: $l-size;
+  }
+
+  .auth-action {
+    display: flex;
+    justify-content: space-between;
+  
+    @include tablet {
+      flex-direction: column;
+  
+      a {
+        margin-top: $m-size;
+        margin-bottom: 0;
+        text-align: center;
+        order: 2;
+      }
+  
+      button {
+        order: 1;
+      }
+    }
+  }
+  
+  .auth-action-signup {
+    justify-content: flex-end;
+  }
+  
   
   
   

@@ -25,4 +25,30 @@ input {
   // margin-bottom: $s-size;
 }
 
+input:read-only:not(.price-range-input) {
+  opacity: .5;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.input-message {
+  display: block;
+  padding: $s-size;
+  color: $red;
+  font-weight: bold;
+}
+
+.input-form {
+  padding: 10px $m-size !important;
+  border: 1px solid $border-color-focus !important;
+  font-size: $font-medium !important;
+  // margin-bottom: $s-size;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
   
