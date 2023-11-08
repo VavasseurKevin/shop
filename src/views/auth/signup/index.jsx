@@ -1,6 +1,7 @@
 import React from "react";
 import { Field, Form, Formik } from "formik";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { SocialLogin } from "../../../components/common";
 
 const SignUp = () => {
   return (
@@ -59,6 +60,7 @@ const SignUp = () => {
         <div className="auth-divider">
               <h6>OR</h6>
             </div>
+            <SocialLogin/>
       </div>
     </div>
   );

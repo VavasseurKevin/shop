@@ -90,5 +90,87 @@
       }
     }
   }
+
+
+  .auth-provider {
+  width: 51rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  & > button {
+    margin-bottom: $s-size;
+  }
+}
+  
+.auth-provider-button {
+    width: 100%;
+    font-size: 1.4rem;
+  
+    & * {
+      font-size: 1.4rem;
+    }
+  
+    .anticon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: $m-size;
+      margin: auto;
+    }
+  }
+
+  .auth-button {
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .provider-facebook {
+    @extend .button;
+    background: $color-facebook;
+    color: $white;
+    border: 1px solid $color-facebook;
+    
+    &:hover {
+      background: $color-facebook-hover;
+      border: 1px solid $color-facebook;
+    }
+  }
+
+  .provider-github {
+    @extend .button;
+    background: $color-github;
+    color: $white;
+    border: 1px solid $color-github;
+    
+    &:hover {
+      background: $color-github-hover;
+      border: 1px solid $color-github;
+    }
+  }
+  
+  .provider-google {
+    @extend .button;
+    background: $white;
+    color: $gray-01;
+    border: 1px solid $border-color-focus;
+  
+    &:hover {
+      background: $border-color;
+      border: 1px solid $border-color;
+    }
+  
+    span {
+      flex-basis: 80%;
+      color: $paragraph-color;
+    }
+  }
+  
   
   
