@@ -66,7 +66,7 @@ const Navigation = () => {
         </li>
         <li className="navigation-action">
           <Link className="button button-small" exact to={ROUTES.SIGNUP}>
-            S'inscrire
+            S&apos;inscrire
           </Link>
         </li>
 
