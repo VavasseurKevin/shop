@@ -66,7 +66,7 @@ const ViewProduct = () => {
                 <br />
                 <br />
                 <select>
-                  <option value="" disabled selected>
+                  <option value="" disabled >
                     --Select Size--
                   </option>
                   <option value="size1">28 mm</option>
