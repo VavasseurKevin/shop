@@ -9,4 +9,5 @@ export default () => {
         rootReducer,
         applyMiddleware(thunk)
     );
+    return { store };
 };

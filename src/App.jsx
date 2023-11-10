@@ -1,20 +1,23 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import AppRouter from './routers/AppRouter';
-import "./styles/style.scss"
+import './styles/style.scss';
 import WebFont from 'webfontloader';
 
-
-WebFont.load({
-  google: {
-    families: ['Tajawal']
-  }
-});
-
 const App = () => {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Tajawal'],
+      },
+    });
+  }, []);
+
+
+
   return (
     <div>
-        <AppRouter />
+      <AppRouter />
     </div>
   );
 };
