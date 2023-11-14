@@ -1,18 +1,34 @@
-import firebaseConfig from "./config";
-import app from "firebase/app";
-import "firebase/auth";
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+
+// Import the Firebase configuration
+import firebaseConfig from './config.js';
 
 class Firebase {
+  constructor() {
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
 
-    constructor() {
-        // Initialize Firebase
-        app.initializeApp(firebaseConfig);
-        this.auth = app.auth();
+    // Check that getAuth is used here
+    this.auth = getAuth(app);
+    this.storage = getStorage(app);
+    this.db = getFirestore(app);
+  }
+
+  async createUserWithEmailAndPassword(email, password) {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(this.auth, email, password);
+      console.log('User created successfully:', userCredential.user);
+      return userCredential;
+    } catch (error) {
+      console.error('Error creating user:', error.message);
+      throw error;
     }
-
+  }
 }
 
-// AUTH ACTIONS -------------
+const firebaseInstance = new Firebase();
 
-signInWithGoogle = () =>
-    this.auth.signInWithPopup(new app.auth.GoogleAuthProvider());
+export default firebaseInstance;
