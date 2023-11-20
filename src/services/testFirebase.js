@@ -3,8 +3,8 @@
 import firebaseInstance from "./firebase.js";
 
 // Ajoutez un utilisateur avec e-mail et mot de passe
-const emailToAdd = 'test6@example.com';
-const passwordToAdd = 'securepassword6';
+const emailToAdd = 'test60@example.com';
+const passwordToAdd = 'securepassword60';
 
 // Utilisez la méthode createUserWithEmailAndPassword de la classe Firebase
 firebaseInstance.createUserWithEmailAndPassword(emailToAdd, passwordToAdd)
