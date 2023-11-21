@@ -29,6 +29,14 @@ class Firebase {
   }
 }
 
+getFeaturedProducts = (itemsCount = 12 ) => {
+  this.db
+    .collection("products")
+    .where("isFeatured", "==", true)
+    .limit(itemsCount)
+    .get();
+};
+
 const firebaseInstance = new Firebase();
 
 export default firebaseInstance;

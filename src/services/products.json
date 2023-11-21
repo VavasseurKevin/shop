@@ -1,0 +1,161 @@
+{
+    "products": [
+      {
+        "brand": "Elegant",
+        "dateAdded": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "300",
+        "isFeatured": true,
+        "isRecommended": false,
+        "maxQuantity": 100,
+        "name": "Arma",
+        "price": 250,
+        "quantity": 50
+      },
+      {
+        "brand": "Fashionista",
+        "dateAdded": 8,
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "image": "301",
+        "isFeatured": false,
+        "isRecommended": true,
+        "maxQuantity": 75,
+        "name": "Chic",
+        "price": 180,
+        "quantity": 30
+      },
+
+      {
+        "brand": "Urban Style",
+        "dateAdded": 14,
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        "image": "310",
+        "isFeatured": true,
+        "isRecommended": false,
+        "maxQuantity": 90,
+        "name": "City Life",
+        "price": 300,
+        "quantity": 20
+      },
+      {
+        "brand": "Vintage Vibes",
+        "dateAdded": 20,
+        "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "image": "302",
+        "isFeatured": false,
+        "isRecommended": true,
+        "maxQuantity": 50,
+        "name": "Retro Bliss",
+        "price": 150,
+        "quantity": 15
+      },
+      {
+        "brand": "TechStyle",
+        "dateAdded": 10,
+        "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "311",
+        "isFeatured": true,
+        "isRecommended": false,
+        "maxQuantity": 80,
+        "name": "Gadget Glow",
+        "price": 350,
+        "quantity": 25
+      },
+      {
+        "brand": "Sporty Look",
+        "dateAdded": 18,
+        "description": "Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "image": "305",
+        "isFeatured": false,
+        "isRecommended": true,
+        "maxQuantity": 60,
+        "name": "Active Fit",
+        "price": 200,
+        "quantity": 40
+      }, 
+      {
+      "brand": "Casual Comfort",
+      "dateAdded": 22,
+      "description": "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "image": "310",
+      "isFeatured": true,
+      "isRecommended": false,
+      "maxQuantity": 90,
+      "name": "Cozy Bliss",
+      "price": 280,
+      "quantity": 15
+    },
+    {
+      "brand": "Urban Edge",
+      "dateAdded": 25,
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "image": "306",
+      "isFeatured": false,
+      "isRecommended": true,
+      "maxQuantity": 70,
+      "name": "City Edge",
+      "price": 220,
+      "quantity": 35
+    },
+    {
+      "brand": "Storm Edge",
+      "dateAdded": 24,
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "image": "306",
+      "isFeatured": true,
+      "isRecommended": false,
+      "maxQuantity": 70,
+      "name": "City Atlantic",
+      "price": 250,
+      "quantity": 3
+    },
+    {
+      "brand": "Node Edge",
+      "dateAdded": 25,
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "image": "306",
+      "isFeatured": false,
+      "isRecommended": true,
+      "maxQuantity": 20,
+      "name": "City Edge",
+      "price": 320,
+      "quantity": 35
+    },
+    {
+      "brand": "Saint Fashion",
+      "dateAdded": 25,
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "image": "306",
+      "isFeatured": true,
+      "isRecommended": false,
+      "maxQuantity": 70,
+      "name": "City Atalntic",
+      "price": 420,
+      "quantity": 55
+    },
+    {
+        "brand": "Modern Trends",
+        "dateAdded": 28,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "312",
+        "isFeatured": false,
+        "isRecommended": true,
+        "maxQuantity": 65,
+        "name": "Sleek Style",
+        "price": 190,
+        "quantity": 10
+      },
+      {
+        "brand": "Classic Elegance",
+        "dateAdded": 30,
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "image": "303",
+        "isFeatured": true,
+        "isRecommended": false,
+        "maxQuantity": 85,
+        "name": "Timeless Charm",
+        "price": 270,
+        "quantity": 25
+      }    ]
+  }
+  
