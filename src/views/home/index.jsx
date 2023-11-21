@@ -6,6 +6,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import { ProductShowcaseGrid } from "../../components/product";
 import { Footer } from "../../components/common";
 import useFeaturedProducts from "../../hooks/useFeaturedProducts";
+import { useRecommendedProducts } from "../../hooks";
 
 const Home = () => {
   const {
@@ -15,8 +16,17 @@ const Home = () => {
     error: errorFeatured,
   } = useFeaturedProducts(6);
 
+  const {
+    recommendedProducts,
+    fetchRecommendedProducts,
+    isLoading: isLoadingRecommended,
+    error: errorRecommended
+  } = useRecommendedProducts(6);
+
+
   useEffect(() => {
     fetchFeaturedProducts();
+    fetchRecommendedProducts();
   }, []);
 
   console.log('Featured Products in Home:', featuredProducts);
@@ -66,7 +76,7 @@ const Home = () => {
           {isLoadingFeatured ? (
             <p>Chargement des produits recommandés...</p>
           ) : (
-            <ProductShowcaseGrid products={featuredProducts} skeletonCount={6} />
+            <ProductShowcaseGrid products={recommendedProducts} skeletonCount={6} />
           )}
           <Footer />
         </div>

@@ -4,9 +4,9 @@ import * as ROUTES from "../../constants/routes";
 import Skeleton from "react-loading-skeleton";
 
 const ProductFeatured = ({ product }) => {
-  console.log('Product:', product);
-  console.log('Product Name:', product.name);
-  console.log('Product Brand:', product.brand);
+  //console.log('Product:', product);
+  //console.log('Product Name:', product.name);
+  //console.log('Product Brand:', product.brand);
   return (
     <div className="product-display">
       <div className="product-display-img">
