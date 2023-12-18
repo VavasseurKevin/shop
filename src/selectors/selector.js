@@ -1,10 +1,10 @@
-export const selectFilter = () => {
+export const selectFilter = (products, filter) => {
 
      // Vérifie si la liste de produits est vide ou non définie
     if (!products || products.length === 0) return [];
 
     // Convertit le mot-clé de filtre en minuscules
-    const keyword = filter.keyword.toLowerCae();
+    const keyword = filter.keyword.toLowerCase();
 
     // Filtre les produits en fonction des critères spécifiés dans l'objet filter
     return products.filter((product) => {
