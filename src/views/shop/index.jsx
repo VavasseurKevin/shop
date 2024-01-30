@@ -1,24 +1,28 @@
 import React from "react";
-import { ProductGrid } from "../../components/product";
-import useScrollTop from "../../hooks/useScrollTop";
-import { shallowEqual, useSelector } from "react-redux";
+import { useSelector, shallowEqual } from "react-redux";
 import { selectFilter } from "../../selectors/selector";
 import ProductList from "../../components/product/ProductList";
+import { ProductGrid } from "../../components/product";
+import useScrollTop from "../../hooks/useScrollTop";
 
 const Shop = () => {
   useScrollTop();
 
-  const { products } = useSelector((state) => ({
-    products: state.products.items, 
-  }), shallowEqual);
+  // Utilisation de useSelector avec une fonction de comparaison personnalisée (shallowEqual)
+  const filteredProducts = useSelector(
+    (state) => selectFilter(state.products.items, state.filter),
+    shallowEqual
+  );
 
   return (
     <main className="content">
       <section className="product-list-wrapper">
-        <ProductGrid products={products} />
+        <ProductList filteredProducts={filteredProducts}>
+          <ProductGrid />
+        </ProductList>
       </section>
     </main>
   );
-}
+};
 
 export default Shop;
